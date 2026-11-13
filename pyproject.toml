@@ -1,0 +1,10 @@
+[project]
+name = "risk-in-euros"
+version = "1.0.0"
+description = "Quantify cyber risk in euros: FAIR-style Monte Carlo, loss exceedance curve and control ROI for the board"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+risk-in-euros = "risk_in_euros.cli:main"

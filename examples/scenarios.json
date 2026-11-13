@@ -1,0 +1,14 @@
+{
+  "organisation": "Acme Logistics (sample)",
+  "scenarios": [
+    { "name": "Ransomware on core systems", "frequency": [0.02, 0.08, 0.3], "loss": [150000, 900000, 5000000],
+      "mitigations": [
+        { "name": "Immutable offline backups", "cost": 40000, "lossReduction": 0.45 },
+        { "name": "EDR with 24x7 response", "cost": 90000, "freqReduction": 0.5, "lossReduction": 0.2 } ] },
+    { "name": "Business email compromise", "frequency": [0.5, 2, 6], "loss": [5000, 40000, 300000],
+      "mitigations": [ { "name": "Payment call-back control", "cost": 8000, "lossReduction": 0.6 }, { "name": "Phishing-resistant MFA", "cost": 25000, "freqReduction": 0.4 } ] },
+    { "name": "Personal data breach (GDPR)", "frequency": [0.05, 0.2, 0.6], "loss": [50000, 250000, 3000000],
+      "mitigations": [ { "name": "Data minimisation programme", "cost": 60000, "lossReduction": 0.35 } ] },
+    { "name": "Cloud outage at key supplier", "frequency": [0.2, 1, 3], "loss": [10000, 60000, 400000] }
+  ]
+}
